@@ -13,51 +13,47 @@
         style="@android:style/Widget.Material.EditText"
         android:layout_width="350dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
         android:text="Username"
-        app:layout_constraintBottom_toTopOf="@+id/CompanyLogin"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="17dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-
-    <EditText
-        android:id="@+id/CompanyLogin"
-        android:layout_width="350dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/emailLogin"
-        tools:layout_editor_absoluteX="17dp"
-        tools:text="Company" />
 
     <EditText
         android:id="@+id/emailLogin"
         android:layout_width="350dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/passwordLogin"
-        tools:layout_editor_absoluteX="17dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
         android:id="@+id/passwordLogin"
         android:layout_width="350dp"
         android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPassword"
         android:text="PassWoRd"
         android:textAlignment="viewStart"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
 
     <Button
         android:id="@+id/button2"
@@ -65,7 +61,10 @@
         android:layout_height="46dp"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/password"
-        android:layout_marginTop="176dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="116dp"
         android:layout_weight="1"
         android:alpha=".9"
         android:backgroundTint="#4776ff"
@@ -73,17 +72,25 @@
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordLogin"
-        tools:layout_editor_absoluteX="17dp" />
+        app:layout_constraintVertical_bias="0.466" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:alpha="0.9"
         android:text="Account Setup"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
