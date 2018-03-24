@@ -20,7 +20,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
-        android:text="Username"
+        android:hint="Username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -35,7 +35,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email"
+        android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
@@ -49,7 +49,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="PassWoRd"
+        android:hint="Password"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
