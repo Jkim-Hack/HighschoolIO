@@ -9,11 +9,13 @@ public class UserSetup extends AppCompatActivity {
 
     private DatabaseReference mDataBase;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_setup);
+
+
+
     }
 
     private void createUser(String username, String email, String password, String location){
