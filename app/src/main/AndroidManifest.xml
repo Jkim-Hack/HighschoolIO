@@ -45,7 +45,8 @@
 
         <activity
             android:name=".NearStands"
-            android:label="@string/title_activity_near_stands"></activity>
+            android:label="@string/title_activity_near_stands" />
+        <activity android:name="com.androidsolved.androidsolvedflotingeditext.OwnerMain"></activity>
     </application>
 
 </manifest>

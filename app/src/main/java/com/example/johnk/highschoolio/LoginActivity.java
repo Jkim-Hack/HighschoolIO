@@ -96,11 +96,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             public void onClick(View view) {
                 openNext();
             }
-        });
 
-       // mLoginFormView = findViewById(R.id.login_form);
-       // mProgressView = findViewById(R.id.login_progress);
-    }
+
 
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
@@ -203,6 +200,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private void openNext(){
         startActivity(new Intent(LoginActivity.this,UserSetup.class));
     }
+
+    private void openUserMain(){
+        startActivity(new Intent(LoginActivity.this,SheksMain.class));
+    }
+
     private void openMain(){
 
     }
