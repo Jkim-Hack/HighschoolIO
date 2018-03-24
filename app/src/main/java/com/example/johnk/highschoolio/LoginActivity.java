@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button registerButton = (Button) findViewById(R.id.button7);
+        Button registerButton = (Button) findViewById(R.id.button);
         registerButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -100,8 +100,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        mLoginFormView = findViewById(R.id.login_form);
-        mProgressView = findViewById(R.id.login_progress);
+       // mLoginFormView = findViewById(R.id.login_form);
+       // mProgressView = findViewById(R.id.login_progress);
     }
 
     private void populateAutoComplete() {
@@ -199,12 +199,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask.execute((Void) null);
         }
 
-        if(cancel == false){
-        openMain();
-        }
+       // if(cancel == false){
+        //openMain();
+        //}
     }
     private void openNext(){
-        startActivity(new Intent());
+        startActivity(new Intent(LoginActivity.this,UserSetup.class));
     }
     private void openMain(){
 
