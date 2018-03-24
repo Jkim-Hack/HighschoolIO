@@ -3,6 +3,7 @@ package com.example.johnk.highschoolio;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -61,6 +62,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private boolean cancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +89,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 attemptLogin();
+            }
+        });
+
+        Button registerButton = (Button) findViewById(R.id.button7);
+        registerButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openNext();
             }
         });
 
@@ -156,7 +166,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
 
-        boolean cancel = false;
+        cancel = false;
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
@@ -188,6 +198,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
         }
+
+        if(cancel == false){
+        openMain();
+        }
+    }
+    private void openNext(){
+        startActivity(new Intent());
+    }
+    private void openMain(){
+
     }
 
     private boolean isEmailValid(String email) {
