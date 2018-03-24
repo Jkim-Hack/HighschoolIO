@@ -12,4 +12,19 @@ public class Locations
         lo = lon;
     }
 
+    public String getAddy()
+    {
+        return addy;
+    }
+
+    public double getLat()
+    {
+        return lat;
+    }
+
+    public double getLong()
+    {
+        return lon;
+    }
+
 }
