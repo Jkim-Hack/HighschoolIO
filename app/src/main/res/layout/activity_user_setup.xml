@@ -13,35 +13,40 @@
         style="@android:style/Widget.Material.EditText"
         android:layout_width="350dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="36dp"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
         android:text="Username"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="91dp" />
-
+        app:layout_constraintBottom_toTopOf="@+id/CompanyLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="17dp" />
 
 
     <EditText
         android:id="@+id/CompanyLogin"
         android:layout_width="350dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="155dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailLogin"
+        tools:layout_editor_absoluteX="17dp"
         tools:text="Company" />
 
     <EditText
         android:id="@+id/emailLogin"
         android:layout_width="350dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="Email"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="216dp" />
+        app:layout_constraintBottom_toTopOf="@+id/passwordLogin"
+        tools:layout_editor_absoluteX="17dp" />
 
     <EditText
         android:id="@+id/passwordLogin"
@@ -51,8 +56,8 @@
         android:inputType="textPassword"
         android:text="PassWoRd"
         android:textAlignment="viewStart"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="281dp" />
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="271dp" />
 
     <Button
         android:id="@+id/button2"
@@ -60,6 +65,7 @@
         android:layout_height="46dp"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/password"
+        android:layout_marginTop="176dp"
         android:layout_weight="1"
         android:alpha=".9"
         android:backgroundTint="#4776ff"
@@ -67,8 +73,8 @@
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordLogin"
+        tools:layout_editor_absoluteX="17dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -77,7 +83,7 @@
         android:alpha="0.9"
         android:text="Account Setup"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteX="94dp"
         tools:layout_editor_absoluteY="16dp" />
 
 </android.support.constraint.ConstraintLayout>
